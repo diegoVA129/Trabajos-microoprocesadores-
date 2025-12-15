@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"prueba1\startup_stm32f103xb.o"
+"prueba1\main.o"
+"prueba1\gpio.o"
+"prueba1\i2c.o"
+"prueba1\stm32f1xx_it.o"
+"prueba1\stm32f1xx_hal_msp.o"
+"prueba1\ssd1306.o"
+"prueba1\stm32f1xx_hal_gpio_ex.o"
+"prueba1\stm32f1xx_hal_i2c.o"
+"prueba1\stm32f1xx_hal.o"
+"prueba1\stm32f1xx_hal_rcc.o"
+"prueba1\stm32f1xx_hal_rcc_ex.o"
+"prueba1\stm32f1xx_hal_gpio.o"
+"prueba1\stm32f1xx_hal_dma.o"
+"prueba1\stm32f1xx_hal_cortex.o"
+"prueba1\stm32f1xx_hal_pwr.o"
+"prueba1\stm32f1xx_hal_flash.o"
+"prueba1\stm32f1xx_hal_flash_ex.o"
+"prueba1\stm32f1xx_hal_exti.o"
+"prueba1\system_stm32f1xx.o"
+--strict --scatter "PRUEBA1\PRUEBA1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PRUEBA1.map" -o PRUEBA1\PRUEBA1.axf
